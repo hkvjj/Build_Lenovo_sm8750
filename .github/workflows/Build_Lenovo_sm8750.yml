@@ -1,72 +1,72 @@
-name: Build_Lenovo_sm8750
-permissions:
-  contents: read
-  actions: write
-on:
-  workflow_dispatch:
-    inputs:
-      kernel_version:
-        description: "📝请选择要编译的版本（仅在不勾选上方选项时生效）"
-        required: false
-        type: choice
-        options:
-          - '6.6.56'
-          - '6.6.89'
-          - '6.6.102'
-          - '6.6.118'
-        default: '6.6.89'
+名称: 构建 Lenovo_sm8750
+权限:
+内容: read
+行动: 写
+上:
+工作流程_调度:
+输入:
+      内核版本:6.6.118
+描述: 📝”) 📝(私月下下下与义 台)
+ 必需: 虚假
+ 类型: 选择
+ 选项:
+          - 6.6.56
+          - 6.6.89
+          - 6.6.102
+          - 6.6.118
+ 默认: 6.6.89
         
-      custom_kernel_suffix:
-        description: "✏️ 自定义内核名称 (留空默认官核名称)"
-        required: false
-        default: ''
+自定义内核_suffix:
+描述: ✏️ 自特和内核損槰 ()
+必需: 虚假
+默认: “
       
-      custom_kernel_time:
-        description: "⏰ 自定义构建时间 (留空默认官核时间)"
-        required: false
-        default: ''
+自定义内核_时间:
+描述: ⇪约义义构和挺迈间(留空默认殘核时间)
+必需: 虚假
+默认: “
 
-      enable_bbg:
-        description: "开启BBG基带守护"
-        required: false
-        default: false
-        type: boolean
+启用:
+描述: 开启BBGG
+必需: 虚假
+默认: 虚假
+类型: 布尔语
 
-      enable_ReKernel:
-        description: "启用Re-Kernel支持"
-        required: false
-        default: true
-        type: boolean
+启用ReKernel:
+描述: 启用-内核
+必需: 虚假
+默认: 真的
+类型: 布尔语
       
-      enable_Adios:
-        description: "启用ADIOS IO调度器支持"
-        required: true
-        default: true
-        type: boolean
+启用 Adios:
+描述: 对本反 IO IO
+必需: 真的
+默认: 真的
+类型: 布尔语
 
-      enable_droidspaces:
-        description: "添加 Droidspaces"
-        required: true
-        default: false
-        type: boolean
+启用Androidspaces:
+描述: 添码
+必需: 真的
+默认: 虚假
+类型: 布尔语
 
-      enable_kpm:
-        description: "启用KPM"
-        required: false
-        default: true
-        type: boolean
+启用_kpm:
+描述: 启用KPM
+必需: 虚假
+默认: 真的
+类型: 布尔语
       
-      enable_susfs:
-        description: "启用SUSFS"
-        required: true
-        default: true
-        type: boolean
+启用_susfs:
+描述: 启用子
+必需: 真的
+默认: 真的
+类型: 布尔语
 
-      enable_signed:
-        description: "使用AOSP密钥签名boot"
-        required: false
-        default: true
-        type: boolean
+启用_segned:
+描述: 使用AOSP��钥签名启动
+必需: 虚假
+默认: 真的
+类型: 布尔语
 
       
        
